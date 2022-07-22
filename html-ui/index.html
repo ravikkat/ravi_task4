@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    
+  <meta charset="UTF-8">
+  
+    
+   
+  <title>Task manager</title>
+  <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    
+    <link rel="stylesheet" href="src/ij.css">
+    <link rel="stylesheet" href="src/animate.css">
+</head>
+<body>
+   <div class="container">
+      <h1>Task Manager</h1>
+      <hr>	
+<!--       TASK FORM-->
+        <section><div class="row">
+           <form class="animated fadeIn" id="form">
+           <div class="">
+            <div class="s12 l12 m12">
+
+                <input type="text" id="Priority" placeholder="Priority">
+                <input type="text" id="Status" placeholder="Status">
+            </div>
+               
+               <div class="row">
+                <div class="s10 l10 m10">
+                <textarea id="description" placeholder="Describe the Task" cols="30" rows="10" onClick="myObj.textSelect(this)"> Describe Your Task</textarea>
+                               
+
+            </div>
+            </div>
+            <div class="col s12 l12 m12">
+                <div class="btn" onclick="submitInfo()">SUBMIT</div>
+                <div class="btn" onclick="myObj.hide()">HIDE</div>
+            </div>
+
+            </div>
+            </form>
+        </div></section>
+       <div class="btn" onClick="myObj.show()" id="show">New Task</div>
+<!--       TASK LIST-->
+  
+          <div class="row" style="text-align:center;" id="myTasks">
+             
+
+              
+          </div>
+
+           
+       
+
+       
+   </div>
+   <script src="src/ObjectApp.js"></script>
+
+
+
+    </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
